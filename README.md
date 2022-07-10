@@ -1,2 +1,2 @@
 # challenges-interview
-Files From Tech Interview
+Files of a Tech Interview
