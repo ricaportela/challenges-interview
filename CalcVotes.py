@@ -17,21 +17,26 @@ Dica: relação ao total significa que você deve dividir, por exemplo
 Utilize programação orientada a objetos"""
 
 class Votes:
-    def __init__(self, valor):
-        self.valor = valor
+    def __init__(self, nulos, brancos, validos):
+        self.nulos = 50
+        self.brancos = 150
+        self.validos = 800
+    
+    def totalvotos(self):
+        return self.nulos + self.validos + self.brancos
+    
+    def nulos(self):
+        return (self.nulos / self.total) * 100
 
-    def calcula_brancos(self):
-        pass
+    def validos(self):
+        return (self.validos / self.total) * 100
 
-    def calculo_nulos(self):
-        pass
+    def brancos(self):
+        return (self.brancos / self.total) * 100
 
-    def calculo_validos(self):
-        pass
+    # def calcula(self):
+    #     # total_eleitores = nulos + validos + brancos 
+    #     return 100 * self.valor / 1000 * 0.01
+percent = Votes().nulos() 
 
-    def calcula(self):
-        # total_eleitores = nulos + validos + brancos 
-        return 100 * self.valor / 1000 * 0.01
-
-percent = Votes(150).calcula() 
 print(f"Percentual de votos brancos = {percent:.2%}")
