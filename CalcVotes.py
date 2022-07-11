@@ -1,8 +1,8 @@
 """
 Considerando a tabela abaixo.
 
-total de eleitores =1000
-valido = 800
+total de eleitores = 1000
+validos = 800
 votos brancos 150
 nulos = 50
 
@@ -16,6 +16,14 @@ Dica: relação ao total significa que você deve dividir, por exemplo
 
 Utilize programação orientada a objetos"""
 
-class CalcVotes():
-    def __init__(self) -> None:
-        pass
+class Votes:
+    def __init__(self, valor):
+        self.valor = valor
+    def
+
+    def calcula(self):
+         
+        return 100 * self.valor / 1000 * 0.01
+
+percent = Votes(150).calcula() 
+print(f"{percent:.2%}")
